@@ -40,4 +40,4 @@ server:
   servlet:
     context-path: /api/v1
   port: 7003
-welcomeMsg: Hii! Welcome to Dev Comments service
+welcomeMsg: HiiI! Welcome to Dev Comments service

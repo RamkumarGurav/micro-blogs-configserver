@@ -1,0 +1,43 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: "true"
+      javax:
+        persistence:
+          validation:
+            mode: none
+    show-sql: "true"
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    username: ramsender123@gmail.com
+    port: "587"
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: "true"
+          auth: "true"
+    password: njzsdkuwnkiayxxf
+  datasource:
+    password: 1JS15ec071@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/testdb_users_auth
+adminSecretPassword: asdffdsa
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        security: DEBUG
+jwtSecretKey: 8f2e76a5e3de35467604874bba1ab395fe5151d8581a555ce6ddf1e4efa2c019
+fromEmail: ramsender123@gmail.com
+server:
+  servlet:
+    context-path: /api/v1
+  port: 7003
+welcomeMsg: Hii! Welcome to Dev Comments service
